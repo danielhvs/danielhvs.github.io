@@ -1,3 +1,3 @@
 lein run &&
-cp -rpv resources/public/blog/* ../ &&
+cp -rpv resources/public/* ../ &&
 rm -r resources/public
