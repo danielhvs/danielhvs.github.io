@@ -1,8 +1,5 @@
-{:title "Another Page"
+{:title "Pagina local que nao e post"
  :layout :page
  :page-index 1}
 
-## Look at this sweet page
-
-this is another custom page
-totally not a post
+Isto e uma pagina local que nao e um post

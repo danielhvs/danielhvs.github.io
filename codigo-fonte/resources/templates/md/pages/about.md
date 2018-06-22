@@ -1,8 +1,8 @@
-{:title "About"
+{:title "Sobre"
  :layout :page
  :page-index 0
  :navbar? true}
 
-## Write something about something
+## Coisas sobre software
 
-wow wow wow
+Observações sobre coisas do dia-a-dia de um desenvolvedor de software, qualquer coisa interessante sobre software, desenvolvimento de programas e ferramentas.
