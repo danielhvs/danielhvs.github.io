@@ -12,23 +12,47 @@ http://danielhvs.github.io/
 Observações sobre coisas do dia-a-dia de um desenvolvedor de software
 </description>
 <lastBuildDate>
-Fri, 22 Jun 2018 00:25:08 -0300
+Sat, 23 Jun 2018 13:19:08 -0300
 </lastBuildDate>
 <generator>
 clj-rss
 </generator>
 <item>
 <guid>
-http://danielhvs.github.io/./posts-output/2018-06-21-um-teste/
+http://danielhvs.github.io/./posts-output/2018-06-23-comandos-basicos-linux/
 </guid>
 <link>
-http://danielhvs.github.io/./posts-output/2018-06-21-um-teste/
+http://danielhvs.github.io/./posts-output/2018-06-23-comandos-basicos-linux/
 </link>
 <title>
-Linux bem basico
+Comandos básicos de console
 </title>
 <description>
-&lt;h1 id=&quot;navegacao&amp;#95;de&amp;#95;pastas&amp;#95;no&amp;#95;linux&quot;&gt;Navegacao de pastas no linux&lt;/h1&gt;&lt;p&gt;Quando tu tá no console do linux (tela preta cheia de letra branca ou branca cheia de letra preta ou à la matrix), geralmente você está dentro de uma pasta (muitos chamam de diretório). Existem caracteres especiais pra ajudar na navegação entre pastas via linha de comando. Abaixo mostro os exemplos mais usados.&lt;/p&gt;&lt;h3 id=&quot;ponto&amp;#95;(.)&quot;&gt;Ponto (.)&lt;/h3&gt;&lt;p&gt;“.” é a pasta “atual” em que se está. Por exemplo, “cd .” não faz “nada”? Whuuuut?! Na realidade este comando “cd .” faz um “refresh” na pasta atual! Ou seja, se alguém copiou coisa lá pra dentro, tu já vê! Se alguém deletou, depois copiou, depois moveu, depois soltou um arquivo lá dentro, tu já vê!&lt;/p&gt;&lt;h3 id=&quot;til&amp;#95;(~)&quot;&gt;Til (~)&lt;/h3&gt;&lt;p&gt;“~” é a pasta “home” do usuário logado. Geralmente se tu é “joao.da.silva”, seu “~” é a pasta “/home/joao.da.silva”. Resumindo, tu usa “cd ~/Downloads” para acessar a pasta “/home/joao.da.silva/Downloads”.&lt;/p&gt;&lt;h3 id=&quot;ponto&amp;#95;ponto&amp;#95;(..)&quot;&gt;Ponto ponto (..)&lt;/h3&gt;&lt;p&gt;“..” é a pasta “pai” da pasta em que se está. Um uso comum é, por exemplo, se tu tá em “/home/joao.da.silva/Downloads”, pode usar o comando “cd ..” para entrar na pasta “/home/joao.da.silva”.&lt;/p&gt;&lt;h3 id=&quot;hífen&amp;#95;(-)&quot;&gt;Hífen (-)&lt;/h3&gt;&lt;p&gt;“-” é a pasta “anterior” à pasta em que se está. Por exemplo, se estou em “/home/joao.da.silva/Downloads” e faço “cd /usr/bin” e depois “cd -“, eu volto para “/home/joao.da.silva/Downloads”&lt;/p&gt;&lt;h2 id=&quot;comandos&amp;#95;em&amp;#95;ação&quot;&gt;Comandos em ação&lt;/h2&gt;&lt;h3 id=&quot;ls:&amp;#95;lista&amp;#95;os&amp;#95;arquivos&amp;#95;e&amp;#95;pastas&amp;#95;onde&amp;#95;tu&amp;#95;tá.&quot;&gt;ls: Lista os arquivos e pastas onde tu tá.&lt;/h3&gt;&lt;p&gt;Uso sempre “ls -ltr” pois “-l” é para mostrar um embaixo do outro, “t” é para ordenar por “tempo” e “r” é para ordenar “revertido”, ou seja, mostra os arquivos novos no fim.&lt;/p&gt;&lt;h3 id=&quot;cat:&amp;#95;mostra&amp;#95;o&amp;#95;conteúdo&amp;#95;do&amp;#95;arquivo.&quot;&gt;cat: Mostra o conteúdo do arquivo.&lt;/h3&gt;&lt;p&gt;Imprime conteúdo de arquivo. Assim, sem ficar abrindo word, excel, whatever. Imprime o conteúdo do arquivo no console! Mostra logo esse arquivo que eu quero ver! Muito útil para ver rapidamente arquivos texto pequenos. Veja, arquivos texto é qualquer tipo de texto que um ser humano possa ler.&lt;/p&gt;&lt;h3 id=&quot;cd:&amp;#95;“change&amp;#95;directory”&amp;#95;vai&amp;#95;pra&amp;#95;pasta!&quot;&gt;cd: “change directory” vai pra pasta!&lt;/h3&gt;&lt;p&gt;Extremamente usado por motivos óbvios. Pode ser usado de forma relativa ou “absoluta.&lt;/p&gt;&lt;p&gt;relativa: $ /home/joao.da.silva: cd Downloads $ /home/joao.da.silva/Downloads:&lt;/p&gt;&lt;p&gt;absoluta: $ /home/joao.da.silva: cd /tmp $ /tmp:&lt;/p&gt;
+&lt;h3 id=&quot;ls:&amp;#95;lista&amp;#95;os&amp;#95;arquivos&amp;#95;e&amp;#95;pastas&amp;#95;onde&amp;#95;tu&amp;#95;tá.&quot;&gt;ls: Lista os arquivos e pastas onde tu tá.&lt;/h3&gt;&lt;p&gt;Uso sempre “ls -ltr” pois “-l” é para mostrar um embaixo do outro, “t” é para ordenar por “tempo” e “r” é para ordenar “revertido”, ou seja, mostra os arquivos novos no fim.&lt;/p&gt;&lt;h3 id=&quot;cat:&amp;#95;mostra&amp;#95;o&amp;#95;conteúdo&amp;#95;do&amp;#95;arquivo.&quot;&gt;cat: Mostra o conteúdo do arquivo.&lt;/h3&gt;&lt;p&gt;Imprime conteúdo de arquivo. Assim, sem ficar abrindo word, excel, whatever. Imprime o conteúdo do arquivo no console! Mostra logo esse arquivo que eu quero ver! Muito útil para ver rapidamente arquivos texto pequenos. Veja, arquivos texto é qualquer tipo de texto que um ser humano possa ler.&lt;/p&gt;&lt;h3 id=&quot;cd:&amp;#95;“change&amp;#95;directory”&amp;#95;vai&amp;#95;pra&amp;#95;pasta!&quot;&gt;cd: “change directory” vai pra pasta!&lt;/h3&gt;&lt;p&gt;Extremamente usado por motivos óbvios. Pode ser usado de forma relativa ou absoluta.&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;console&quot;&gt;relativa:
+$ /home/joao.da.silva: cd Downloads
+$ /home/joao.da.silva/Downloads:
+
+absoluta:
+$ /home/joao.da.silva: cd /tmp
+$ /tmp:
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+<pubDate>
+Sat, 23 Jun 2018 00:00:00 -0300
+</pubDate>
+</item>
+<item>
+<guid>
+http://danielhvs.github.io/./posts-output/2018-06-21-navegacao-pastas-linux/
+</guid>
+<link>
+http://danielhvs.github.io/./posts-output/2018-06-21-navegacao-pastas-linux/
+</link>
+<title>
+Navegação de pastas
+</title>
+<description>
+&lt;p&gt;Quando você está no console do linux (tela preta cheia de letra branca ou branca cheia de letra preta), geralmente você está dentro de uma pasta (muitos chamam de diretório). Existem caracteres especiais pra ajudar na navegação entre pastas via linha de comando. Abaixo mostro os exemplos mais usados.&lt;/p&gt;&lt;h3 id=&quot;ponto&amp;#95;(.)&quot;&gt;Ponto (.)&lt;/h3&gt;&lt;p&gt;“.” é a pasta “atual” em que se está. Por exemplo, “cd .” não faz “nada”? Whuuuut?! Na realidade este comando “cd .” faz um “refresh” na pasta atual! Ou seja, se alguém copiou coisa lá pra dentro, tu já vê! Se alguém deletou, depois copiou, depois moveu, depois soltou um arquivo lá dentro, tu já vê!&lt;/p&gt;&lt;h3 id=&quot;til&amp;#95;(~)&quot;&gt;Til (~)&lt;/h3&gt;&lt;p&gt;“~” é a pasta “home” do usuário logado. Geralmente se tu é “joao.da.silva”, seu “~” é a pasta “/home/joao.da.silva”. Resumindo, tu usa “cd ~/Downloads” para acessar a pasta “/home/joao.da.silva/Downloads”.&lt;/p&gt;&lt;h3 id=&quot;ponto&amp;#95;ponto&amp;#95;(..)&quot;&gt;Ponto ponto (..)&lt;/h3&gt;&lt;p&gt;“..” é a pasta “pai” da pasta em que se está. Um uso comum é, por exemplo, se tu tá em “/home/joao.da.silva/Downloads”, pode usar o comando “cd ..” para entrar na pasta “/home/joao.da.silva”.&lt;/p&gt;&lt;h3 id=&quot;hífen&amp;#95;(-)&quot;&gt;Hífen (-)&lt;/h3&gt;&lt;p&gt;“-” é a pasta “anterior” à pasta em que se está. Por exemplo, se estou em “/home/joao.da.silva/Downloads” e faço “cd /usr/bin” e depois “cd -“, eu volto para “/home/joao.da.silva/Downloads”&lt;/p&gt;
 </description>
 <pubDate>
 Thu, 21 Jun 2018 00:00:00 -0300
