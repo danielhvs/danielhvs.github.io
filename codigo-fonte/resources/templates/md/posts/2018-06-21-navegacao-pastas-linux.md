@@ -1,4 +1,4 @@
-{:title "Navegação de pastas"
+{:title "Navegação em pastas"
  :layout :post
  :tags  ["linux" "linha de comando"]}
 
