@@ -12,11 +12,28 @@ http://danielhvs.github.io/
 Observações sobre coisas do dia-a-dia de um desenvolvedor de software
 </description>
 <lastBuildDate>
-Tue, 26 Jun 2018 09:42:51 -0300
+Tue, 26 Jun 2018 19:59:22 -0300
 </lastBuildDate>
 <generator>
 clj-rss
 </generator>
+<item>
+<guid>
+http://danielhvs.github.io/./posts-output/2018-06-26-removendo-metodos-nao-usados/
+</guid>
+<link>
+http://danielhvs.github.io/./posts-output/2018-06-26-removendo-metodos-nao-usados/
+</link>
+<title>
+Removendo métodos não usados
+</title>
+<description>
+&lt;p&gt;De vez em quando a gente vê um monte de métodos que não sabemos se são usados ou não. Sabe um jeito rápido de capar fora os que não são usados usando o eclipse?&lt;/p&gt;&lt;ol&gt;&lt;li&gt;Abra a classe&lt;/li&gt;&lt;li&gt;Mude todos os métodos &quot;public&quot; para &quot;private&quot;&lt;/li&gt;&lt;li&gt;Salve a classe&lt;/li&gt;&lt;li&gt;Veja onde não compila mais as outras classes&lt;/li&gt;&lt;li&gt;Onde não compila, clica em cima, ctrl+1, transforma em public, enter.&lt;/li&gt;&lt;li&gt;Faz isso até compilar tudo&lt;/li&gt;&lt;li&gt;Volta pra classe&lt;/li&gt;&lt;li&gt;Veja os privates que sobraram e remove com: ctrl+1, remove!&lt;/li&gt;&lt;li&gt;Vai pra casa fazer o que der na telha.&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;Disclaimer: Não use isso se estiver usando frameworks xml que injetam as coisas usando reflexão! Ou use, mas depois confira se nenhum dos métodos removidos são chamados pelos frameworks (exemplo, JSF, Spring).&lt;/p&gt;
+</description>
+<pubDate>
+Tue, 26 Jun 2018 00:00:00 -0300
+</pubDate>
+</item>
 <item>
 <guid>
 http://danielhvs.github.io/./posts-output/2018-06-25-paradigmas/

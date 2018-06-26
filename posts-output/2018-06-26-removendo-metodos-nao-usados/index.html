@@ -2,8 +2,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
     <meta charset="utf-8"/>
-    <title>Notas de um dev: Posts by Daniel Habib Vieira da Silva </title>
-    <link rel="canonical" href="http://danielhvs.github.io/./authors-output/Daniel Habib Vieira da Silva/">
+    <title>Notas de um dev: Removendo métodos não usados</title>
+    <link rel="canonical" href="http://danielhvs.github.io/./posts-output/2018-06-26-removendo-metodos-nao-usados/">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="//fonts.googleapis.com/css?family=Alegreya:400italic,700italic,400,700" rel="stylesheet"
           type="text/css">
@@ -51,32 +51,41 @@
         <div class="col-lg-9">
             <div id="content">
                 
-<div id="posts">
-  <div id="page-header" class="post-header">
-    <h2>Posts by Daniel Habib Vieira da Silva</h2>
-  </div>
-  
-  <h4>2018 June</h4>
-  <ul>
+<div id="post">
+    <div class="post-header">
+    <div id="post-meta" class="row">
+        <div class="col-lg-6">June 26, 2018</div>
+        
+    </div>
+    <h2>Removendo métodos não usados</h2>
+</div>
+<div>
     
-    <li>
-      Jun 26 - <a href="/./posts-output/2018-06-26-removendo-metodos-nao-usados/">Removendo métodos não usados</a>
-    </li>
+    <p>De vez em quando a gente vê um monte de métodos que não sabemos se são usados ou não. Sabe um jeito rápido de capar fora os que não são usados usando o eclipse?</p><ol><li>Abra a classe</li><li>Mude todos os métodos "public" para "private"</li><li>Salve a classe</li><li>Veja onde não compila mais as outras classes</li><li>Onde não compila, clica em cima, ctrl+1, transforma em public, enter.</li><li>Faz isso até compilar tudo</li><li>Volta pra classe</li><li>Veja os privates que sobraram e remove com: ctrl+1, remove!</li><li>Vai pra casa fazer o que der na telha.</li></ol><p>Disclaimer: Não use isso se estiver usando frameworks xml que injetam as coisas usando reflexão! Ou use, mas depois confira se nenhum dos métodos removidos são chamados pelos frameworks (exemplo, JSF, Spring).</p>
+</div>
+
+<div id="post-tags">
+    <b>Tags: </b>
     
-    <li>
-      Jun 25 - <a href="/./posts-output/2018-06-25-paradigmas/">Map e loop for</a>
-    </li>
+    <a href="/./tags-output/java/">java</a>
     
-    <li>
-      Jun 23 - <a href="/./posts-output/2018-06-23-comandos-basicos-linux/">Comandos básicos de console</a>
-    </li>
+    <a href="/./tags-output/eclipse/">eclipse</a>
     
-    <li>
-      Jun 21 - <a href="/./posts-output/2018-06-21-navegacao-pastas-linux/">Navegação em pastas</a>
-    </li>
+    <a href="/./tags-output/clean code/">clean code</a>
     
-  </ul>
-  
+</div>
+
+
+    <div id="prev-next">
+        
+        
+        <a class="right" href="/./posts-output/2018-06-25-paradigmas/">Map e loop for &raquo;</a>
+        
+    </div>
+
+    
+
+
 </div>
 
             </div>
