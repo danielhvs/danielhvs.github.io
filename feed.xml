@@ -12,11 +12,54 @@ http://danielhvs.github.io/
 Observações sobre coisas do dia-a-dia de um desenvolvedor de software
 </description>
 <lastBuildDate>
-Sat, 23 Jun 2018 13:25:29 -0300
+Tue, 26 Jun 2018 00:45:25 -0300
 </lastBuildDate>
 <generator>
 clj-rss
 </generator>
+<item>
+<guid>
+http://danielhvs.github.io/./posts-output/2018-06-25-paradigmas/
+</guid>
+<link>
+http://danielhvs.github.io/./posts-output/2018-06-25-paradigmas/
+</link>
+<title>
+Map e loop for
+</title>
+<description>
+&lt;p&gt;Olha que interessante sobre como toda vez usamos loop &quot;for&quot; em linguagem imperativa para fazer um &quot;map&quot; das linguagens funcionais, declarativas.&lt;/p&gt;&lt;h3 id=&quot;loop&amp;#95;for&quot;&gt;Loop for&lt;/h3&gt;&lt;p&gt;Por exemplo, em Java (versões mais antigas), para obter o dobro de cada elemento de uma lista de 0 a 9, faz-se algo como:&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;java&quot;&gt;List&amp;lt;Integer&amp;gt; saidas = new ArrayList&amp;lt;Integer&amp;gt;&amp;#40;&amp;#41;;
+List&amp;lt;Integer&amp;gt; entradas = Arrays.asList&amp;#40;0, 1, 2, 3, 4, 5, 6, 7, 8, 9&amp;#41;;
+for&amp;#40;Integer entrada : entradas&amp;#41; {
+        saidas.add&amp;#40;entrada + 1&amp;#41;;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Sempre que se quer fazer alguma operação em todos os elementos de uma lista, usa-se essa forma: loop for, às vezes se usa uma variável contadora, opera em cada elemento. De forma geral:&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;java&quot;&gt;private S opera&amp;#40;E elemento&amp;#41; {
+        &amp;#40;...&amp;#41;;
+}
+
+private List&amp;lt;E&amp;gt; obtemEntradas&amp;#40;&amp;#41; {
+        &amp;#40;...&amp;#41;;
+}
+
+List&amp;lt;S&amp;gt; saidas = new ArrayList&amp;lt;S&amp;gt;&amp;#40;&amp;#41;;
+List&amp;lt;E&amp;gt; entradas = obtemEntradas&amp;#40;&amp;#41;;
+for&amp;#40;E entrada : entradas&amp;#41; {
+            saidas.add&amp;#40;opera&amp;#40;entrada&amp;#41;&amp;#41;;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&quot;map&quot;&gt;Map&lt;/h3&gt;&lt;p&gt;Para o mesmo exemplo acima, daria pra fazer, em Clojure:&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;clojure&quot;&gt;&amp;#40;map inc &amp;#40;range 10&amp;#41;&amp;#41;
+&lt;/code&gt;&lt;/pre&gt;&lt;pre&gt;&lt;code class=&quot;clojure&quot;&gt;&amp;#40;defn obtem-entradas &amp;#91;&amp;#93; &amp;#40;...&amp;#41;&amp;#41;
+&amp;#40;defn opera &amp;#91;e&amp;#93; &amp;#40;...&amp;#41;&amp;#41;
+
+&amp;#40;map opera obtem-entradas&amp;#41;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Assim, a função &quot;map&quot; generaliza o conceito de &quot;aplicar uma operação em todos elementos de uma lista&quot;, além de tornar o código mais expressivo e enxuto. Java possui esta funcionalidade a partir da versão 8. Ficaria assim, o primeiro exemplo:&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;java&quot;&gt;Integer&amp;#91;&amp;#93; saidas = Arrays.stream&amp;#40;new Integer&amp;#91;&amp;#93; { 0, 1, 2, 3, 4, 5, 5, 6, 7, 8, 9 }&amp;#41;
+			 .map&amp;#40;e -&amp;gt; e + 1&amp;#41;
+			 .toArray&amp;#40;Integer&amp;#91;&amp;#93;::new&amp;#41;;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Meio bizarro, mas mais expressivo que o loop for com certeza.&lt;/p&gt;&lt;h3 id=&quot;conclusão&quot;&gt;Conclusão&lt;/h3&gt;&lt;p&gt;Em várias coisas é &quot;depende&quot;, cada um tem suas vantagens e desvantagens, etc. Mas para esses dois jeitos de fazer a mesma coisa acima aí, prefiro &quot;map&quot; na grande maioria das vezes.&lt;/p&gt;
+</description>
+<pubDate>
+Mon, 25 Jun 2018 00:00:00 -0300
+</pubDate>
+</item>
 <item>
 <guid>
 http://danielhvs.github.io/./posts-output/2018-06-23-comandos-basicos-linux/
